@@ -77,4 +77,9 @@ public class Forum {
 		}
 		return null;
 	}
+
+    public int getNbrOfContributionsPerUser(String name) {
+        User user = getUserForName(name);
+        return user == null ? 0 : user.getNbrOfContributions();
+    }
 }

@@ -25,6 +25,10 @@ public class Discussion {
 		this.name = name;
 	}
 
+	public void addContribution(Contribution contribution) {
+		contributions.add(contribution);
+	}
+
 	public List<Contribution> getContributions() {
 		return contributions;
 	}
